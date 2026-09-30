@@ -1,0 +1,18 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Activity — GreenWatch</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="container nav">
+<a class="brand" href="index.html"><div class="brandmark">G</div>GreenWatch</a>
+<nav class="navlinks">
+<a href="index.html#features">Features</a><a href="index.html#how">How it works</a>
+<a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a>
+</nav>
+<button class="navbtn" id="logoutBtn">Logout</button>
+</div></header>
+
+<div class="container appwrap"><div class="appgrid"><aside class="sidebar"><div class="brand"><div class="brandmark">G</div>GreenWatch</div><div class="menu"><a href="dashboard.html" class="">Overview</a><a href="sessions.html" class="">Sessions</a><a href="activity.html" class="active">Activity</a><a href="locations.html" class="">Locations</a><a href="recovery.html" class="">Recovery</a><a href="billing.html" class="">Billing</a><a href="profile.html" class="">Profile</a></div></aside>
+<main class="content">
+<div class="toprow"><div><span class="muted tiny">EVENT HISTORY</span><h2 style="margin:3px 0">Activity</h2></div><span class="status">Non-sensitive records</span></div>
+<div class="toolbar"><input id="activitySearch" placeholder="Search activity"><button class="btn" id="activityRefresh">Refresh</button></div>
+<div class="tablebox"><table><thead><tr><th>Time</th><th>Session</th><th>Category</th><th>Event</th></tr></thead><tbody id="activityRows"><tr><td colspan="4">Loading...</td></tr></tbody></table></div>
+</main></div></div>
+<script src="js/config.js"></script><script src="js/app.js"></script></body></html>

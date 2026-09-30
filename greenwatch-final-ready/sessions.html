@@ -1,0 +1,18 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sessions — GreenWatch</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="container nav">
+<a class="brand" href="index.html"><div class="brandmark">G</div>GreenWatch</a>
+<nav class="navlinks">
+<a href="index.html#features">Features</a><a href="index.html#how">How it works</a>
+<a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a>
+</nav>
+<button class="navbtn" id="logoutBtn">Logout</button>
+</div></header>
+
+<div class="container appwrap"><div class="appgrid"><aside class="sidebar"><div class="brand"><div class="brandmark">G</div>GreenWatch</div><div class="menu"><a href="dashboard.html" class="">Overview</a><a href="sessions.html" class="active">Sessions</a><a href="activity.html" class="">Activity</a><a href="locations.html" class="">Locations</a><a href="recovery.html" class="">Recovery</a><a href="billing.html" class="">Billing</a><a href="profile.html" class="">Profile</a></div></aside>
+<main class="content">
+<div class="toprow"><div><span class="muted tiny">SESSION MANAGEMENT</span><h2 style="margin:3px 0">Sessions</h2></div><span class="status">Authorized only</span></div>
+<div class="toolbar"><input id="sessionSearch" placeholder="Search phone or session ID"><select id="sessionFilter"><option value="">All status</option><option>Demo Active</option><option>Paused</option><option>Closed</option></select><button class="btn" id="sessionRefresh">Refresh</button></div>
+<div class="tablebox"><table><thead><tr><th>ID</th><th>Phone</th><th>Status</th><th>Consent</th><th>Created</th></tr></thead><tbody id="sessionRows"><tr><td colspan="5">Loading...</td></tr></tbody></table></div>
+</main></div></div>
+<script src="js/config.js"></script><script src="js/app.js"></script></body></html>

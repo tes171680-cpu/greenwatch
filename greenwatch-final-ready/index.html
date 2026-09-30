@@ -1,0 +1,66 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GreenWatch — Security Dashboard</title><link rel="stylesheet" href="css/style.css"></head><body>
+
+<header><div class="container nav">
+<a class="brand" href="index.html"><div class="brandmark">G</div>GreenWatch</a>
+<nav class="navlinks">
+<a href="index.html#features">Features</a><a href="index.html#how">How it works</a>
+<a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a>
+</nav>
+<a class="navbtn" href="customer-login.html">Customer Login</a>
+</div></header>
+
+<section class="hero"><div class="container hero-grid"><div>
+<span class="kicker">GitHub Pages + Google Sheets</span>
+<h1>Account security and <span>activity dashboard</span>.</h1>
+<p class="lead">A tracker-style SaaS frontend for consent-based device sessions, activity records, location sharing and account recovery workflows.</p>
+<div class="stats"><div class="stat"><b>100%</b><span>STATIC FRONTEND</span></div><div class="stat"><b>0</b><span>PHP REQUIRED</span></div><div class="stat"><b>6</b><span>DASHBOARD MODULES</span></div><div class="stat"><b>1</b><span>GOOGLE SHEET</span></div></div>
+</div>
+<div class="panel"><h3>Start a consented session</h3><p class="muted small">Use a number you own or are authorized to manage.</p>
+<form id="sessionForm"><div class="field"><select id="country"><option>+62</option><option>+60</option><option>+65</option><option>+1</option></select><input id="phone" required inputmode="tel" placeholder="812 3456 7890"></div>
+<label class="check"><input id="consent" type="checkbox" required><span>I confirm I own this number or have explicit permission to use it.</span></label>
+<button class="btn block" type="submit">Create Demo Session</button></form>
+<div class="notice">This build never asks for OTP, password, QR/session tokens, private chat data, or covert location access.</div>
+</div></div></section>
+
+<section id="features" class="section alt"><div class="container"><div class="section-title"><h2>All core screens in one product</h2><p>Same kind of commercial SaaS flow, but with safe data handling and original branding.</p></div>
+<div class="grid3">
+<div class="card"><div class="icon">💬</div><h3>Activity Records</h3><p>Timeline and event history from your own consented records.</p></div>
+<div class="card"><div class="icon">📍</div><h3>Location Sharing</h3><p>Display only locations submitted by an authorized user.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Session Management</h3><p>Session cards, last update, status and package information.</p></div>
+<div class="card"><div class="icon">↺</div><h3>Recovery Center</h3><p>Safe recovery guidance using official platform recovery methods.</p></div>
+<div class="card"><div class="icon">💳</div><h3>Plans & Billing UI</h3><p>Pricing cards and plan state stored as ordinary account metadata.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Google Sheets Data</h3><p>Lightweight records delivered through Google Apps Script.</p></div>
+</div></div></section>
+
+<section id="how" class="section"><div class="container"><div class="section-title"><h2>How it works</h2><p>The website stays static while Apps Script handles approved database actions.</p></div>
+<div class="grid3"><div class="card"><div class="stepnum">1</div><h3>Create</h3><p>Visitor submits an authorized number and consent flag.</p></div><div class="card"><div class="stepnum">2</div><h3>Store</h3><p>Apps Script writes session metadata into Google Sheets.</p></div><div class="card"><div class="stepnum">3</div><h3>Manage</h3><p>Dashboard pages read status, activity, plan and consented location records.</p></div></div>
+</div></section>
+
+<section class="section alt"><div class="container"><div class="section-title"><h2>Dashboard preview</h2></div>
+<div class="preview"><aside class="pside"><div class="brand"><div class="brandmark">G</div>GreenWatch</div>
+<div class="plink active">Overview</div><div class="plink">Sessions</div><div class="plink">Activity</div><div class="plink">Locations</div><div class="plink">Recovery</div><div class="plink">Billing</div>
+</aside><div class="pcontent"><div class="toprow"><div><span class="muted tiny">DEMO WORKSPACE</span><h3 style="margin:3px 0">Overview</h3></div><span class="status">● Online</span></div>
+<div class="metrics"><div class="metric"><span>Sessions</span><b>03</b></div><div class="metric"><span>Activity items</span><b>128</b></div><div class="metric"><span>Recovery cases</span><b>04</b></div></div>
+<div class="tablebox"><table><thead><tr><th>Time</th><th>Module</th><th>Event</th><th>Status</th></tr></thead><tbody>
+<tr><td>08:32</td><td>Session</td><td>Authorized demo session created</td><td><span class="tag">Active</span></td></tr>
+<tr><td>08:18</td><td>Location</td><td>Consented location record updated</td><td><span class="tag">Saved</span></td></tr>
+<tr><td>07:56</td><td>Recovery</td><td>Recovery checklist generated</td><td><span class="tag">Ready</span></td></tr>
+</tbody></table></div></div></div></div></section>
+
+<section id="pricing" class="section"><div class="container"><div class="section-title"><h2>Example pricing</h2><p>Change these values for the customer.</p></div><div class="grid3">
+<div class="card"><h3>Starter</h3><div class="price">$19 <small>/ month</small></div><p>1 authorized session<br>Basic activity log<br>Recovery center</p></div>
+<div class="card popular"><span class="kicker">Popular</span><h3>Professional</h3><div class="price">$49 <small>/ month</small></div><p>5 authorized sessions<br>Location records<br>Full dashboard</p></div>
+<div class="card"><h3>Business</h3><div class="price">$99 <small>/ month</small></div><p>15 authorized sessions<br>Activity exports<br>Priority support UI</p></div>
+</div></div></section>
+
+<section id="faq" class="section alt"><div class="container"><div class="section-title"><h2>Frequently asked questions</h2></div><div class="faq">
+<details open><summary>Can this run entirely from GitHub Pages?</summary><p>Yes. HTML, CSS and JavaScript are static; Google Apps Script provides the database endpoint.</p></details>
+<details><summary>Is Google Sheets suitable as the database?</summary><p>For lightweight, non-sensitive records such as leads, consent flags, session status and plan metadata, yes.</p></details>
+<details><summary>Does it access WhatsApp accounts?</summary><p>No. This build does not retrieve chats, OTPs, passwords, QR sessions, tokens or account secrets.</p></details>
+<details><summary>Can location be stored?</summary><p>Only a location explicitly shared by an authorized user should be stored. The included API requires a consent flag.</p></details>
+</div></div></section>
+<footer><div class="container footer"><div>© 2026 GreenWatch</div><div>GitHub Pages • Google Apps Script • Google Sheets</div></div></footer>
+<div id="toast" class="toast"><b id="toastTitle"></b><div id="toastText" class="small muted"></div></div>
+<script src="js/config.js"></script><script src="js/site.js"></script></body></html>

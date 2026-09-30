@@ -1,0 +1,25 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recovery — GreenWatch</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="container nav">
+<a class="brand" href="index.html"><div class="brandmark">G</div>GreenWatch</a>
+<nav class="navlinks">
+<a href="index.html#features">Features</a><a href="index.html#how">How it works</a>
+<a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a>
+</nav>
+<button class="navbtn" id="logoutBtn">Logout</button>
+</div></header>
+
+<div class="container appwrap"><div class="appgrid"><aside class="sidebar"><div class="brand"><div class="brandmark">G</div>GreenWatch</div><div class="menu"><a href="dashboard.html" class="">Overview</a><a href="sessions.html" class="">Sessions</a><a href="activity.html" class="">Activity</a><a href="locations.html" class="">Locations</a><a href="recovery.html" class="active">Recovery</a><a href="billing.html" class="">Billing</a><a href="profile.html" class="">Profile</a></div></aside>
+<main class="content">
+<div class="toprow"><div><span class="muted tiny">RECOVERY CENTER</span><h2 style="margin:3px 0">Account Recovery</h2></div><span class="status">Official methods only</span></div>
+<div class="grid3" style="margin-top:16px">
+<div class="card"><div class="stepnum">1</div><h3>Verify ownership</h3><p>Use the official platform's recovery flow on a device you control.</p></div>
+<div class="card"><div class="stepnum">2</div><h3>Secure sessions</h3><p>Review connected devices and remove anything you do not recognize.</p></div>
+<div class="card"><div class="stepnum">3</div><h3>Enable protection</h3><p>Turn on two-step verification and update recovery details.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Create recovery case</h3><form id="recoveryForm">
+<div class="field"><input id="recSession" placeholder="Session ID" required><select id="recState"><option>Open</option><option>In Review</option><option>Resolved</option></select></div>
+<div class="field" style="display:block"><input id="recNote" style="width:100%" placeholder="Non-sensitive case note" required></div>
+<button class="btn" type="submit">Save case</button></form></div>
+</main></div></div>
+<script src="js/config.js"></script><script src="js/app.js"></script></body></html>

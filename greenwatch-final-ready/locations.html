@@ -1,0 +1,25 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Locations — GreenWatch</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="container nav">
+<a class="brand" href="index.html"><div class="brandmark">G</div>GreenWatch</a>
+<nav class="navlinks">
+<a href="index.html#features">Features</a><a href="index.html#how">How it works</a>
+<a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a>
+</nav>
+<button class="navbtn" id="logoutBtn">Logout</button>
+</div></header>
+
+<div class="container appwrap"><div class="appgrid"><aside class="sidebar"><div class="brand"><div class="brandmark">G</div>GreenWatch</div><div class="menu"><a href="dashboard.html" class="">Overview</a><a href="sessions.html" class="">Sessions</a><a href="activity.html" class="">Activity</a><a href="locations.html" class="active">Locations</a><a href="recovery.html" class="">Recovery</a><a href="billing.html" class="">Billing</a><a href="profile.html" class="">Profile</a></div></aside>
+<main class="content">
+<div class="toprow"><div><span class="muted tiny">CONSENTED LOCATION RECORDS</span><h2 style="margin:3px 0">Locations</h2></div><span class="status">Permission required</span></div>
+<div class="grid3" style="grid-template-columns:1.4fr .6fr;margin-top:16px">
+<div class="mapmock"><div class="pin"></div></div>
+<div class="card"><h3>Location demo</h3><p>Map is visual-only. A location can be added to Sheets only when the user explicitly shares it.</p>
+<form id="locationForm"><div class="field" style="display:block"><input id="locSession" style="width:100%" placeholder="Session ID" required></div>
+<div class="field" style="display:block"><input id="locLabel" style="width:100%" placeholder="Label e.g. My Device" required></div>
+<div class="field"><input id="locLat" placeholder="Latitude" required><input id="locLng" placeholder="Longitude" required></div>
+<label class="check"><input id="locConsent" type="checkbox" required><span>I confirm this location was shared with permission.</span></label>
+<button class="btn block" type="submit">Save location</button></form></div></div>
+<div class="tablebox"><table><thead><tr><th>Session</th><th>Label</th><th>Latitude</th><th>Longitude</th><th>Time</th></tr></thead><tbody id="locationRows"><tr><td colspan="5">Loading...</td></tr></tbody></table></div>
+</main></div></div>
+<script src="js/config.js"></script><script src="js/app.js"></script></body></html>

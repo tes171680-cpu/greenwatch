@@ -1,0 +1,26 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Database Admin — GreenWatch</title><link rel="stylesheet" href="css/admin.css"></head>
+<body>
+<header><div class="container nav"><div class="brand"><div class="logo">G</div>GreenWatch Database Admin</div>
+<div><button class="btn secondary small" id="logoutBtn">Logout</button></div></div></header>
+<div class="container layout">
+<aside class="sidebar"><h3>Tables</h3><div id="tableList"></div></aside>
+<main class="main">
+<section class="panel">
+<div class="top"><div><span class="muted small">GOOGLE SHEETS DATABASE</span><h1 id="tableTitle">Select table</h1><div class="statusbar"><span class="dot"></span><span id="statusText" class="small muted">Ready</span></div></div>
+<div><button id="createCustomerBtn" class="btn secondary">+ Create Customer</button> <button id="addBtn" class="btn">+ Add record</button></div></div>
+<div class="stats"><div class="stat"><span>TABLE</span><b id="statTable">—</b></div><div class="stat"><span>ROWS</span><b id="statRows">0</b></div><div class="stat"><span>COLUMNS</span><b id="statCols">0</b></div><div class="stat"><span>MODE</span><b style="font-size:16px">CRUD</b></div></div>
+<div class="toolbar"><input id="search" placeholder="Search current table"><button id="refreshBtn" class="btn secondary">Refresh</button></div>
+<div class="table-wrap"><table><thead id="thead"></thead><tbody id="tbody"><tr><td class="muted">Choose a table.</td></tr></tbody></table></div>
+</section>
+</main>
+</div>
+
+<div id="recordModal" class="modal-backdrop"><div class="modal">
+<h2 id="modalTitle">Add record</h2><form id="recordForm"><div id="recordFields" class="form-grid"></div>
+<div class="modal-actions"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button type="submit" class="btn">Save</button></div></form>
+</div></div>
+
+<div id="customerModal" class="modal-backdrop"><div class="modal"><h2>Create Customer</h2><form id="customerForm"><div class="form-grid"><div class="form-group"><label>Name</label><input name="name" required></div><div class="form-group"><label>Email</label><input name="email" type="email" required></div><div class="form-group"><label>Phone</label><input name="phone"></div><div class="form-group"><label>Access code</label><input name="access_code" minlength="8" required></div><div class="form-group"><label>Plan</label><select name="plan_id"><option value="P-STARTER">Starter</option><option value="P-PRO">Professional</option><option value="P-BIZ">Business</option></select></div></div><div class="modal-actions"><button type="button" id="cancelCustomer" class="btn secondary">Cancel</button><button type="submit" class="btn">Create</button></div></form></div></div><script src="js/config.js"></script><script src="js/admin.js"></script>
+</body></html>

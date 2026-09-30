@@ -1,0 +1,19 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — GreenWatch</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="container nav">
+<a class="brand" href="index.html"><div class="brandmark">G</div>GreenWatch</a>
+<nav class="navlinks">
+<a href="index.html#features">Features</a><a href="index.html#how">How it works</a>
+<a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a>
+</nav>
+<button class="navbtn" id="logoutBtn">Logout</button>
+</div></header>
+
+<div class="container appwrap"><div class="appgrid"><aside class="sidebar"><div class="brand"><div class="brandmark">G</div>GreenWatch</div><div class="menu"><a href="dashboard.html" class="active">Overview</a><a href="sessions.html" class="">Sessions</a><a href="activity.html" class="">Activity</a><a href="locations.html" class="">Locations</a><a href="recovery.html" class="">Recovery</a><a href="billing.html" class="">Billing</a><a href="profile.html" class="">Profile</a></div></aside>
+<main class="content">
+<div class="toprow"><div><span class="muted tiny">GOOGLE SHEETS DATA</span><h2 style="margin:3px 0">Overview</h2></div><span id="apiStatus" class="status">● Loading</span></div>
+<div class="metrics"><div class="metric"><span>Total Sessions</span><b id="mSessions">0</b></div><div class="metric"><span>Active Sessions</span><b id="mActive">0</b></div><div class="metric"><span>Activities</span><b id="mActivity">0</b></div></div>
+<div class="toolbar"><input id="search" placeholder="Search session records"><button id="refreshBtn" class="btn">Refresh</button></div>
+<div class="tablebox"><table><thead><tr><th>ID</th><th>Phone</th><th>Status</th><th>Plan</th><th>Created</th></tr></thead><tbody id="overviewRows"><tr><td colspan="5" class="muted">Loading...</td></tr></tbody></table></div>
+</main></div></div>
+<script src="js/config.js"></script><script src="js/app.js"></script></body></html>
